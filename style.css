@@ -31,7 +31,6 @@ body {
 .contact-title {
     font-weight: 800;
     letter-spacing: -1px;
-    color: var(--dark);
 }
 
 .badge-company {
