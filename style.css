@@ -1,0 +1,402 @@
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --dark:#0f172a;
+    --text:#475569;
+    --light:#f8fafc;
+    --border:#e2e8f0;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg,
+            #f8f9fa 0%,
+            #ffffff 100%);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 280px;
+    margin-bottom: 25px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.hero-title span {
+    color: var(--primary);
+}
+
+.tagline {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.vision-box {
+    border-left: 5px solid var(--primary);
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.service-card {
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: var(--primary);
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.stats {
+    background: #0d6efd;
+    color: white;
+}
+
+.footer {
+    background: #111827;
+    color: white;
+}
+
+@media(max-width:768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+.hero-section {
+    background: #fff;
+}
+
+.badge-company {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.display-2 {
+    line-height: 1.1;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img{
+    max-width:420px;
+    filter:drop-shadow(
+        0 25px 50px rgba(37,99,235,.15)
+    );
+}
+
+
+.contact-section {
+    background-color: #0F172A;
+    color: #ffffff;
+    padding: 100px 0;
+    border-top: 4px solid #2563EB;
+}
+
+.contact-label {
+    color: #60A5FA;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contact-description {
+    color: #CBD5E1;
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-item h6 {
+    color: #60A5FA;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.contact-item p {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.services-section {
+    background: #f8fafc;
+    padding: 100px 0;
+}
+
+.services-section .display-5 {
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -1px;
+}
+
+.services-section .text-muted {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.service-box {
+
+    position: relative;
+    background:
+        linear-gradient(180deg,
+            #ffffff 0%,
+            #fbfdff 100%);
+    padding: 45px;
+    border-radius: 24px;
+    border: 1px solid #e5e7eb;
+    height: 100%;
+
+
+    transition: all .35s ease;
+    overflow: hidden;
+
+
+}
+
+.service-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background: #2563eb;
+    transition: .4s;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    border-color: #dbeafe;
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, .08),
+        0 8px 20px rgba(15, 23, 42, .05);
+}
+
+.service-box:hover::before {
+    height: 100%;
+}
+
+.service-number {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2563eb;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.service-box h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 18px;
+}
+
+.service-box p {
+    color: #6b7280;
+    line-height: 1.9;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.service-box:hover h4 {
+    color: #2563eb;
+}
+
+@media (max-width: 768px) {
+
+
+    .services-section {
+        padding: 70px 0;
+    }
+
+    .service-box {
+        padding: 30px;
+    }
+
+    .service-box h4 {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+
+.service-box::after {
+    content: '→';
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    font-size: 24px;
+    color: #cbd5e1;
+    transition: .3s;
+}
+
+.service-box:hover::after {
+    color: #2563eb;
+    transform: translateX(5px);
+}
+
+
+.vision-section {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+.vision-label {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.vision-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111827;
+    letter-spacing: -1.5px;
+}
+
+.vision-card {
+    position: relative;
+    background: #ffffff;
+    border-left: 5px solid #2563eb;
+    padding: 40px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, .08);
+}
+
+.vision-card p {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #4b5563;
+    margin: 0;
+}
+
+@media(max-width:768px) {
+    .vision-section {
+        background:
+            linear-gradient(180deg,
+                #ffffff 0%,
+                #f8fafc 100%);
+    }
+
+    .vision-title {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+
+    .vision-card {
+        padding: 25px;
+    }
+
+    .vision-card p {
+        font-size: 1.05rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+.navbar{
+    padding:20px 0;
+    background:rgba(255,255,255,.95)!important;
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(226,232,240,.7);
+}
+
+.navbar-brand{
+    font-weight:800;
+    font-size:1.4rem;
+}
+
+.nav-link{
+    font-weight:500;
+    color:#475569!important;
+    margin-left:24px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:var(--primary)!important;
+}
+
+
+.display-2{
+    font-size:5rem;
+    font-weight:800;
+    letter-spacing:-2px;
+    color:var(--dark);
+}
+
+.lead{
+    font-size:1.2rem;
+    line-height:1.9;
+}
+
+
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+.service-box,
+.vision-card,
+.contact-item{
+    transition:all .35s ease;
+}
+
+
+.section-title,
+.vision-title,
+.contact-title{
+    color:var(--dark);
+    font-weight:800;
+    letter-spacing:-1px;
+}
