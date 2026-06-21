@@ -106,12 +106,12 @@ body {
    ========================================================================== */
 .navbar {
     padding: 14px 0;
-    background: rgba(255, 255, 255, 0.92) !important;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.96), rgba(244, 249, 250, 0.94)) !important;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(216, 231, 234, 0.78);
+    border-bottom: 1px solid rgba(216, 231, 234, 0.82);
     transition: var(--transition);
-    box-shadow: 0 10px 30px rgba(15, 36, 51, 0.05);
+    box-shadow: 0 10px 32px rgba(11, 95, 124, 0.06);
 }
 
 .navbar-brand {
@@ -139,7 +139,7 @@ body {
 
 .nav-link:hover {
     color: var(--primary) !important;
-    background: #f5f9fb;
+    background: linear-gradient(90deg, rgba(11, 95, 124, 0.08), rgba(31, 138, 154, 0.06));
 }
 
 .nav-link::after {
