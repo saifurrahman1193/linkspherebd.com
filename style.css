@@ -128,6 +128,25 @@ body {
     font-size: 1.4rem;
     letter-spacing: -0.02em;
     color: var(--dark);
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-logo-fallback {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--dark);
 }
 
 .nav-link {
@@ -242,6 +261,8 @@ body {
 
 .hero-img {
     max-height: 280px;
+    max-width: 100%;
+    width: auto;
     object-fit: contain;
 }
 
