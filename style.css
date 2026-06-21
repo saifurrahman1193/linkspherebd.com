@@ -59,17 +59,20 @@ body {
    3. NAVIGATION
    ========================================================================== */
 .navbar {
-    padding: 20px 0;
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+    padding: 16px 0;
+    background: rgba(255, 255, 255, 0.88) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(216, 231, 234, 0.75);
     transition: var(--transition);
+    box-shadow: 0 8px 24px rgba(15, 36, 51, 0.04);
 }
 
 .navbar-brand {
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     color: var(--dark);
+    letter-spacing: -0.5px;
 }
 
 .navbar-brand span {
@@ -77,14 +80,31 @@ body {
 }
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text) !important;
-    margin-left: 24px;
+    margin-left: 22px;
+    font-size: 0.95rem;
+    position: relative;
     transition: var(--transition);
 }
 
 .nav-link:hover {
     color: var(--primary) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 /* ==========================================================================
