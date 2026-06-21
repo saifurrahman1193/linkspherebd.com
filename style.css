@@ -64,6 +64,41 @@ body {
     transition: var(--transition);
 }
 
+.btn {
+    border-radius: 999px;
+    padding: 0.8rem 1.35rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    border: 1px solid var(--primary);
+    color: var(--white);
+    box-shadow: 0 10px 24px rgba(11, 95, 124, 0.22);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+    border-color: var(--primary-dark);
+    color: var(--white);
+    box-shadow: 0 14px 30px rgba(11, 95, 124, 0.28);
+}
+
+.btn-outline-dark {
+    border: 1.5px solid #10293f;
+    color: #10293f;
+}
+
+.btn-outline-dark:hover {
+    background: #10293f;
+    color: var(--white);
+}
+
 /* ==========================================================================
    3. NAVIGATION
    ========================================================================== */
