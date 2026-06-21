@@ -2,14 +2,20 @@
    1. CORE VARIABLES & BASE STYLES
    ========================================================================== */
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --dark: #0f172a;
-    --text: #475569;
-    --light: #f8fafc;
-    --border: #e2e8f0;
+    --primary: #0b5f7c;
+    --primary-dark: #08495d;
+    --secondary: #1f8a9a;
+    --dark: #0f2433;
+    --text: #4b6173;
+    --light: #f4f9fa;
+    --border: #d8e7ea;
     --white: #ffffff;
+    --shadow: rgba(11, 95, 124, 0.12);
     --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+    --bs-primary: var(--primary);
+    --bs-primary-rgb: 11, 95, 124;
+    --bs-link-color: var(--primary);
 }
 
 html {
@@ -84,7 +90,7 @@ body {
    4. HERO SECTION
    ========================================================================== */
 .hero-section {
-    background: var(--white);
+    background: linear-gradient(180deg, var(--white) 0%, var(--light) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -117,7 +123,7 @@ body {
     max-width: 360px;
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 25px 50px rgba(37, 99, 235, 0.15));
+    filter: drop-shadow(0 25px 50px var(--shadow));
 }
 
 /* ==========================================================================
@@ -212,7 +218,7 @@ body {
 
 .service-box:hover {
     transform: translateY(-8px);
-    border-color: #dbeafe;
+    border-color: var(--border);
     box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08), 0 8px 20px rgba(15, 23, 42, 0.05);
 }
 
@@ -258,7 +264,7 @@ body {
    7. STATS & CONTACT (FOOTER)
    ========================================================================== */
 .stats {
-    background: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--white);
     padding: 60px 0;
 }
