@@ -517,3 +517,7 @@ body {
         padding: 32px 24px;
     }
 }
+
+.form-control.modern-input {
+    border: 2px solid #ced4da !important;
+}
